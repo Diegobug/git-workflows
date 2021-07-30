@@ -149,9 +149,9 @@ public class Calculator {
      * @return
      */
     public double square(double a) {
-        if(b == 0)
-         throw new IllegalArgumentException("There is no square root of negative number");
-       return Math.sqrt(a);
+    	if(a < 0)
+    		throw new IllegalArgumentException("There is no square root of negative number");
+    	return Math.sqrt(a);
     }
 
 
